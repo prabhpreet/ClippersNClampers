@@ -1,0 +1,16 @@
+@font-face
+{
+font-family: handwritten;
+src: url('fonts/handwriting.ttf')
+}
+
+
+#textArea
+{
+  font-family:handwritten;
+  text-align: center;
+}
+#imageArea
+{
+  text-align:center;
+}

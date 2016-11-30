@@ -1,0 +1,189 @@
+@font-face
+{
+font-family: GrutchShaded;
+src: url('fonts/GrutchShaded.ttf')
+}
+@font-face
+{
+  font-family:circuitboardfont;
+  src: url('fonts/circuitboardfont.ttf')
+}
+@font-face
+{
+  font-family:tiza;
+  src: url('fonts/tiza.ttf')
+}
+body
+{
+  margin:0px;
+  padding:0px;
+  overflow:hidden;
+  background-image: url('../site/img/index/background.PNG');
+ 
+}
+p
+{
+   margin:0px;
+  padding:0px;
+}
+ul
+{
+  list-style: none;
+  margin:0px;
+  padding:0px;
+}
+li
+{
+  margin:0px;
+  padding:0px;
+}
+
+   
+
+iframe.contentSite
+{
+  margin: 0 auto;
+
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:683px;
+  height:667px;
+  /*background-color: #C18E44;*/
+}
+div.loader
+{
+  margin: 0 auto;
+
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:1366px;
+  height:667px;
+  color:white;
+  text-align:center;
+  font-family: helevetica;
+  font-size:72px;
+  background-color:black;
+  z-index:5;
+}
+div.contentClass
+{
+  margin: 0 auto;
+
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:683px;
+  height:667px;
+}
+div.circuitBoard
+{
+  position:absolute;
+  left:683px;
+  top:0px;
+  width:163px;
+  height:667px;
+  border-style: solid;
+  border-width: 0px 0px 0px 8px;
+  border-color:#1D1E24;
+  /*background-color: #C18E44;*/
+}
+li.cB1
+{
+  left:683px;
+  top:0px;
+  width:163px;
+  height:164px;
+}
+li.cB2
+{
+  
+  left:683px;
+  top:164pxpx;
+  width:163px;
+  height:160px;
+}
+li.cB3
+{
+
+  left:683px;
+  top:333px;
+  width:163px;
+  height:164px;
+}
+li.cB4
+{
+
+  left:683px;
+  top:497px;
+  width:163px;
+  height:164px;
+}
+li.cB1, li.cB2, li.cB3, li.cB4: hover
+{
+  opacity:0.5;
+}
+div.diode
+{
+  position:absolute;
+  left:853px;
+  top:0px;
+  width:520px;
+  height:667px;
+  /*background-color: #C18E44;
+  border-style: solid;
+  border-width: 0px 8px 0px 0px;
+  border-color:#1D1E24;*/
+}
+svg.svgGraphics
+{
+  font-family:GrutchShaded;
+  font-size: 70px;
+  fill:black;
+}
+
+div.info
+{
+  position:absolute;
+  left:1372px;
+  top:0px;
+  width:683px;
+  height:667px;
+}
+div.topInfo
+{
+  left:1372px;
+  top:0px;
+  width:683px;
+  height:328px;
+  font-family: GrutchShaded;
+  text-align: center;
+  font-size: 70px;
+  
+  /*background-color: #C18E44;*//*Previous color: #8DA893*/
+    
+}
+/*
+div.topInfo:hover
+{
+  opacity:0.7;
+}*/
+div.bottomInfo
+{
+  border-style: solid;
+  border-width: 8px 0px 0px 0px;
+  border-color:#1D1E24;
+  left:1372px;
+  top:333px;
+  width:683px;
+  height:333px;
+
+  text-align: center;
+  font-size: 30px;
+  /*background-color: #C18E44;*/
+}
+p.creditHeading
+{
+    font-family:tiza;
+}

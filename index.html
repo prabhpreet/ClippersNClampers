@@ -1,1 +1,105 @@
+<!DOCTYPE html>
 
+<head>
+<meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='-1'>
+<meta http-equiv='pragma' content='no-cache'>
+  <title>Clippers and Clampers</title>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="index.js"></script>
+</head>
+<body onload="onPageLoad()">
+<div id="loader" class="loader">LOADING</div>
+<div class="contentClass" onMouseOver="hoverIframeCleanup()">
+  <iframe class="contentSite" id="contentSite" seamless="seamless" src="about:blank" >
+  </iframe>
+</div>
+  <div class="circuitBoard" id ="circuitBoard" onMouseOut"hoverIframeCleanup()">
+      <ul>
+
+        <li class="cB1" id="cB1" onclick="terminalSelect('1', 'red')" onMouseOver="terminalHover('red')" onMouseOut="terminalHoverOut('red')">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" >
+            <circle id="c1" cx="82" cy="82" r="5" style="stroke:red;stroke-width:4;fill:white"  /> 
+            <line id="l1" x1="0" y1="82" x2="79" y2="82"  style="stroke:red;stroke-width:4"/>  
+          </svg> 
+        </li>
+        <li class="cB2" id="cB2" onclick="terminalSelect('2', 'orange')" onMouseOver="terminalHover('orange')" onMouseOut="terminalHoverOut('orange')">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" >
+            <circle id="c2" cx="82" cy="82" r="5" style="stroke:orange;stroke-width:4;fill:white"/> 
+            <line id="l2" x1="0" y1="82" x2="79" y2="82"  style="stroke:orange;stroke-width:4"/>  
+          </svg> 
+        </li>
+
+        <li class="cB3" id="cB3" onclick="terminalSelect('3', 'green')" onMouseOver="terminalHover('green')" onMouseOut="terminalHoverOut('green')">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" >
+            <circle id="c3" cx="82" cy="82" r="5" style="stroke:green;stroke-width:4;fill:white"/> 
+            <line id="l3" x1="0" y1="82" x2="79" y2="82"  style="stroke:green;stroke-width:4"/>  
+          </svg> 
+        </li>
+        <li class="cB4" id="cB4" onclick="terminalSelect('4', 'blue')" onMouseOver="terminalHover('blue')" onMouseOut="terminalHoverOut('blue')">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" >
+            <circle id="c4" cx="82" cy="82" r="5" style="stroke:blue;stroke-width:4;fill:white" /> 
+            <line id="l4" x1="0" y1="82" x2="79" y2="82"  style="stroke:blue;stroke-width:4"/>  
+          </svg> 
+        </li>
+
+      </ul>
+  </div>
+  
+  <div class="diode" id= "diode">
+  
+    <svg id= "svgGraphics" class="svgGraphics" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        
+     
+       
+      <text>
+        
+        <tspan x ="30" y = "290" id="redLine1" display="none">diode</tspan>
+        <tspan x ="30" y = "360" id="redLine2" display="none">clippers</tspan>
+        <tspan x ="30" y = "360" id="redLine3" display="none"></tspan>
+        
+        <tspan x ="20" y = "230" id="orangeLine1" display="none">parallel</tspan>
+        <tspan x ="20" y = "290" id="orangeLine2" display="none">diode</tspan>
+        <tspan x ="20" y = "360" id="orangeLine3" display="none">clippers</tspan>
+        
+        <tspan x ="20" y = "230" id="greenLine1" display="none">biased</tspan>
+        <tspan x ="20" y = "290" id="greenLine2" display="none">diode</tspan>
+        <tspan x ="20" y = "360" id="greenLine3" display="none">clippers</tspan>
+        
+        <tspan x ="20" y = "230" id="blueLine1" display="none">diode </tspan>
+        <tspan x ="20" y = "290" id="blueLine2" display="none">& biased</tspan>  
+        <tspan x ="20" y = "360" id="blueLine3" display="none">clampers</tspan>
+        
+        <tspan x ="20" y = "230" id="tutorialText1" display="none"></tspan>
+        <tspan x ="20" y = "290" id="tutorialText2" display="none">extras</tspan>
+        <tspan x ="20" y = "360" id="tutorialText3" display="none"></tspan>
+        
+        <tspan x ="20" y = "290" id="getBack" display="none">Get Back!</tspan>
+      </text>
+      <polygon id="triangle" onMouseOver="diodeMouseOver()" onMouseOut="diodeMouseOut()" onClick="diodeClick()" points="0,41 0,626 512,333" style="fill:#1D1E24" />
+      <line x1="514" y1="41" x2="514" y2="626"  style="stroke:#1D1E24;stroke-width:8" id="diodeLine"/> 
+    </svg>
+    
+  </div>
+
+  <div class="info" id= "info">
+       <ul>
+       <div class="topInfo" id="topInfo">
+          <li>
+          <p id="dioderant" onMouseOver="diodeMouseOver()" onMouseOut="diodeMouseOut()" onClick="diodeClick()">-Clippers & Clampers-</p>
+          </li>
+       </div>
+       <div class="bottomInfo" id="bottomInfo">
+        <li>
+        <p class="creditHeading" id="creditHeading">CREDITS</p>
+           <img src="img/credits.jpg"/>
+        <br/>
+        
+        </li>
+        </div>
+      </ul>
+  </div>
+
+</body>
+</html>

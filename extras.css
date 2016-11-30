@@ -1,0 +1,56 @@
+@font-face
+{
+font-family: extrasFont;
+src: url('fonts/DENNEthree-dee.ttf')
+}
+body
+{
+  margin: 0 auto;
+}
+p
+{
+  font-family:extrasFont;
+  font-size:70px;
+}
+p.mText
+{
+  position:absolute;
+  left:200px;
+  top:50px;
+  color:white;
+}
+p.gText
+{
+  position:absolute;
+  left:230px;
+  top:50px;
+  color:white;
+}
+div.mindmap
+{
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:683px;
+  height:333px;
+  
+  background-color:#1D1E24;
+}
+div.game
+{
+  position:absolute;
+  left:0px;
+  top:333px;
+  width:683px;
+  height:333px;
+
+  background-color:#1D1E24;
+}
+div.mindmap:hover
+{
+  opacity:0.5;
+}
+div.game:hover
+{
+  opacity:0.5;
+}
